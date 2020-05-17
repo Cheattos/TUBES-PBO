@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 /**
  *
- * @author Arre
+ * @author Heridho
  */
 public class tb_biaya extends javax.swing.JFrame {
     
