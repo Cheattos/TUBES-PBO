@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Arre
+ * @author Heridho
  */
 public class tb_mobil extends javax.swing.JFrame {
     
