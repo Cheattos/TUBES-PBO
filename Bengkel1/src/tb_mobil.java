@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Heridho
+ * @author Arre
  */
 public class tb_mobil extends javax.swing.JFrame {
     
@@ -71,6 +71,7 @@ public class tb_mobil extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -90,33 +91,109 @@ public class tb_mobil extends javax.swing.JFrame {
         btKeluar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabelMobil = new javax.swing.JTable();
+        Kembali = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel1.setText("MOBIL");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 11, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(11, 43, 0, 0);
+        getContentPane().add(jLabel1, gridBagConstraints);
 
         jLabel2.setText("Kode Mobil");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 92, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(37, 29, 0, 0);
+        getContentPane().add(jLabel2, gridBagConstraints);
 
         jLabel3.setText("Nama Mobil");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 130, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(24, 26, 0, 0);
+        getContentPane().add(jLabel3, gridBagConstraints);
 
         jLabel4.setText("Kode Konsumen");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 168, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(21, 26, 0, 0);
+        getContentPane().add(jLabel4, gridBagConstraints);
 
         jLabel5.setText("Plat Mobil");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 206, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(21, 26, 0, 0);
+        getContentPane().add(jLabel5, gridBagConstraints);
 
         jLabel6.setText("Kerusakan");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 244, -1, -1));
-        getContentPane().add(txtKodeMobil, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 86, 364, -1));
-        getContentPane().add(txtNamaMobil, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 124, 364, -1));
-        getContentPane().add(txtKodeKonsumen, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 162, 364, -1));
-        getContentPane().add(txtPlatMobil, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 200, 364, -1));
-        getContentPane().add(txtKerusakan, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 238, 364, 40));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(21, 26, 0, 0);
+        getContentPane().add(jLabel6, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 8;
+        gridBagConstraints.ipadx = 443;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(31, 52, 0, 0);
+        getContentPane().add(txtKodeMobil, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 8;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 443;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(21, 52, 0, 0);
+        getContentPane().add(txtNamaMobil, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 8;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 443;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 52, 0, 0);
+        getContentPane().add(txtKodeKonsumen, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridwidth = 8;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 443;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 52, 0, 0);
+        getContentPane().add(txtPlatMobil, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridwidth = 8;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 443;
+        gridBagConstraints.ipady = 20;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 52, 0, 0);
+        getContentPane().add(txtKerusakan, gridBagConstraints);
 
         btTambah.setText("Tambah");
         btTambah.addActionListener(new java.awt.event.ActionListener() {
@@ -124,7 +201,12 @@ public class tb_mobil extends javax.swing.JFrame {
                 btTambahActionPerformed(evt);
             }
         });
-        getContentPane().add(btTambah, new org.netbeans.lib.awtextra.AbsoluteConstraints(114, 295, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(17, 52, 0, 0);
+        getContentPane().add(btTambah, gridBagConstraints);
 
         btSimpan.setText("Simpan");
         btSimpan.addActionListener(new java.awt.event.ActionListener() {
@@ -132,7 +214,12 @@ public class tb_mobil extends javax.swing.JFrame {
                 btSimpanActionPerformed(evt);
             }
         });
-        getContentPane().add(btSimpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 295, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(17, 18, 0, 0);
+        getContentPane().add(btSimpan, gridBagConstraints);
 
         btHapus.setText("Hapus");
         btHapus.addActionListener(new java.awt.event.ActionListener() {
@@ -140,7 +227,12 @@ public class tb_mobil extends javax.swing.JFrame {
                 btHapusActionPerformed(evt);
             }
         });
-        getContentPane().add(btHapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(357, 295, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(17, 18, 0, 0);
+        getContentPane().add(btHapus, gridBagConstraints);
 
         btEdit.setText("Edit");
         btEdit.addActionListener(new java.awt.event.ActionListener() {
@@ -148,7 +240,13 @@ public class tb_mobil extends javax.swing.JFrame {
                 btEditActionPerformed(evt);
             }
         });
-        getContentPane().add(btEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(288, 295, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(17, 18, 0, 0);
+        getContentPane().add(btEdit, gridBagConstraints);
 
         btKeluar.setText("Keluar");
         btKeluar.addActionListener(new java.awt.event.ActionListener() {
@@ -156,7 +254,12 @@ public class tb_mobil extends javax.swing.JFrame {
                 btKeluarActionPerformed(evt);
             }
         });
-        getContentPane().add(btKeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(438, 295, -1, -1));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 10;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(17, 10, 0, 0);
+        getContentPane().add(btKeluar, gridBagConstraints);
 
         tabelMobil.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -176,7 +279,32 @@ public class tb_mobil extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tabelMobil);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 336, -1, 106));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 11;
+        gridBagConstraints.gridwidth = 15;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 431;
+        gridBagConstraints.ipady = 81;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(18, 52, 37, 0);
+        getContentPane().add(jScrollPane1, gridBagConstraints);
+
+        Kembali.setText("Kembali");
+        Kembali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KembaliActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 11;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.gridwidth = 16;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(17, 10, 0, 18);
+        getContentPane().add(Kembali, gridBagConstraints);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -257,6 +385,14 @@ public class tb_mobil extends javax.swing.JFrame {
         
     }//GEN-LAST:event_tabelMobilMouseClicked
 
+    private void KembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KembaliActionPerformed
+        // TODO add your handling code here:
+        MenuUtama xx;
+        xx = new MenuUtama();
+        xx.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_KembaliActionPerformed
+
     
     
     /**
@@ -295,6 +431,7 @@ public class tb_mobil extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Kembali;
     private javax.swing.JButton btEdit;
     private javax.swing.JButton btHapus;
     private javax.swing.JButton btKeluar;

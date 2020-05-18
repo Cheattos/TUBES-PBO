@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 import java.sql.SQLException;
 /**
  *
- * @author Aree
+ * @author Arre
  */
 public class koneksi {
     private static Connection con;
